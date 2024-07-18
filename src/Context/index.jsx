@@ -12,9 +12,8 @@ export default function GlobalState({ children }) {
   async function handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch(
-        `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
-      );
+      const response = await fetch();
+      // download the link from forkify
 
       const data = await response.json();
 
